@@ -1,23 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+   .header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color:white;
+    font-family: sans-serif;    
+   }
+
+   .logo-container {
+    display:flex;
+    align-items: center;
+    gap: 15px;
+   }
+
+   .logo {
+    width: 125px;
+    height: auto;
+   }
+
+   .logo-text {
+    display:flex;
+    flex-direction: column;
+    font-weight: bold;
+    line-height:1;
+   }
+
+   .red-text {
+    color: #a31f34;
+   }
+
+   .nav-links {
+    display: flex;
+    align-items:center;
+    gap: 25px;
+   }
+
+   .nav-links a {
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+   }
+
+   .nav-links a:hover {
+    opacity: 0.7;
+   }
+
+   .contact-btn {
+    border:1.5px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+   }
+
+   .contact-btn :hover {
+    background:white;
+    color:black;
+   }
+
+   .involve-links {
+    display:flex;
+    padding: 0px 30px;
+   }
+   .involve-links a {
+    transition: opacity 0.3s;
+    text-decoration: none;
+
+   }
+   .involve-links a:hover {
+    opacity: 0.7;
+   }
+
+   .get-involved-btn {
+    border: 2px solid white;
+    padding:10px 20px;
+    font-size: 20px;
+    color: white;
+   }
+
+   .get-involved-btn :hover {
+
+    background: white;
+    color: black;
+   }
+
+   .space-background {
+    background-image: url(maxresdefault.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    aspect-ratio: 12/9;
+   }
+
+   .large-header {
+       display:flex;
+       justify-content: center;
+       font-size: 60px;
+       align-items: center;
+       padding: 30px 30px;
+       font-family:Arial, Helvetica, sans-serif;
+       font-weight: bold;
+       color: white;
+   }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
 
-    <p>Home</p>
-    <p>Team</p>
-    <p>Projects</p>
-    <p>Resources</p>
-    <p>Blog</p>
-    <p>Sponsorships</p>
-    <p>Events</p>
-    <p>Contact Us</p>
-
-    
 </head>
+
+
 <body>
     
+    <div class="space-background">
+        <header class="header-bar">
+            <div class="logo-container">
+                <img src="logo.png" alt = "BHS Rocketry Team Logo" class = "logo">
+                <div class = "logo-text">
+                    <span>BHS</span>
+                    <span class="red-text">ROCKETRY</span>
+                    <span>TEAM</span>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#"> Home</a>
+                <a href="#"> Team</a>
+                <a href="#"> Projects</a>
+                <a href="#"> Resources</a>
+                <a href="#"> Blog</a>
+                <a href="#"> Sponsorships</a>
+                <a href="#" class="contact-btn"> Contact Us</a>
+            </nav>
+        </header>
+
+        <h1 class="large-header">Sending rockets to the stars. Become a member, sponsor, or supporter. </h1>
+        <nav class="involve-links">
+            <a class="get-involved-btn"> Get Involved</a>
+        </nav>
+        
+    </div>
+
+
+    <div>
+        <h1>Bringing Rocketry to BHS</h1>
+        <p>The BHS Rocketry team is dedicated to foster an environment of innovation and creation at BHS through the construction of advanced aerospace systems.</p>
+    </div>
+
+    <div>Get Involved</div>
 </body>
 </html>
